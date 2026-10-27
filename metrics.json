@@ -1,0 +1,148 @@
+{
+ "modelVersion": "dl-action-v3",
+ "featureSpecVersion": "feat-3",
+ "proportionFeatureVersion": "prop-1",
+ "selectedConfig": {
+  "features": "no_proportion",
+  "C": 1.0,
+  "classWeight": "None",
+  "devMacroF1": 0.55284178187404
+ },
+ "rejectThreshold": 0.7252,
+ "devThreshold": {
+  "coverage": 0.6967213114754098,
+  "acceptedAccuracy": 0.5882352941176471
+ },
+ "testMetrics": {
+  "accuracy": 0.4915254237288136,
+  "macroF1": 0.49480551956170854,
+  "balancedAccuracy": 0.4903508771929825,
+  "perClass": {
+   "GB": {
+    "precision": 0.32,
+    "recall": 0.42105263157894735,
+    "f1": 0.3636363636363636,
+    "support": 19
+   },
+   "PB": {
+    "precision": 0.7272727272727273,
+    "recall": 0.4,
+    "f1": 0.5161290322580645,
+    "support": 20
+   },
+   "LLK": {
+    "precision": 0.5652173913043478,
+    "recall": 0.65,
+    "f1": 0.6046511627906976,
+    "support": 20
+   }
+  },
+  "confusion": [
+   [
+    8,
+    3,
+    8
+   ],
+   [
+    10,
+    8,
+    2
+   ],
+   [
+    7,
+    0,
+    13
+   ]
+  ]
+ },
+ "testMajorityBaseline": 0.3389830508474576,
+ "testAccepted": {
+  "count": 37,
+  "total": 59,
+  "accuracy": 0.40540540540540543
+ },
+ "featureComparison": [
+  {
+   "features": "no_proportion",
+   "C": 1.0,
+   "classWeight": "None",
+   "devMacroF1": 0.55284178187404
+  },
+  {
+   "features": "no_proportion",
+   "C": 10.0,
+   "classWeight": "balanced",
+   "devMacroF1": 0.5287978893253492
+  },
+  {
+   "features": "no_proportion",
+   "C": 0.1,
+   "classWeight": "None",
+   "devMacroF1": 0.5178466342400768
+  },
+  {
+   "features": "no_proportion",
+   "C": 1.0,
+   "classWeight": "balanced",
+   "devMacroF1": 0.5159420289855072
+  },
+  {
+   "features": "no_proportion",
+   "C": 0.1,
+   "classWeight": "balanced",
+   "devMacroF1": 0.5107516684808303
+  },
+  {
+   "features": "no_proportion",
+   "C": 10.0,
+   "classWeight": "None",
+   "devMacroF1": 0.5091335679570973
+  },
+  {
+   "features": "with_proportion",
+   "C": 10.0,
+   "classWeight": "balanced",
+   "devMacroF1": 0.48778541428025973
+  },
+  {
+   "features": "with_proportion",
+   "C": 1.0,
+   "classWeight": "balanced",
+   "devMacroF1": 0.48692248949980915
+  },
+  {
+   "features": "with_proportion",
+   "C": 10.0,
+   "classWeight": "None",
+   "devMacroF1": 0.4792790922927909
+  },
+  {
+   "features": "with_proportion",
+   "C": 0.1,
+   "classWeight": "balanced",
+   "devMacroF1": 0.4749855385144537
+  },
+  {
+   "features": "with_proportion",
+   "C": 0.1,
+   "classWeight": "None",
+   "devMacroF1": 0.44182214582197804
+  },
+  {
+   "features": "with_proportion",
+   "C": 1.0,
+   "classWeight": "None",
+   "devMacroF1": 0.43943027569960663
+  }
+ ],
+ "counts": {
+  "train": 122,
+  "test": 59,
+  "total": 181
+ },
+ "classes": [
+  "GB",
+  "PB",
+  "LLK"
+ ]
+}

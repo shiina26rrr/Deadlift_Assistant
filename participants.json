@@ -1,0 +1,977 @@
+{
+ "source": "Mendeley MyDeadlift, DOI 10.17632/w5prmmxyt9.1 (CC BY 4.0)",
+ "protocol": "subject-wise (official dataset split)",
+ "trainParticipants": [
+  "S01",
+  "S02",
+  "S03",
+  "S05",
+  "S06"
+ ],
+ "testParticipants": [
+  "S04",
+  "S07"
+ ],
+ "mixedParticipants": [],
+ "counts": {
+  "trainVideos": 131,
+  "testVideos": 60
+ },
+ "videos": {
+  "GB_S01_R01.mp4": {
+   "split": "training",
+   "label": "gerakan_benar",
+   "participant": "S01"
+  },
+  "GB_S01_R02.mp4": {
+   "split": "training",
+   "label": "gerakan_benar",
+   "participant": "S01"
+  },
+  "GB_S01_R03.mp4": {
+   "split": "training",
+   "label": "gerakan_benar",
+   "participant": "S01"
+  },
+  "GB_S01_R04.mp4": {
+   "split": "training",
+   "label": "gerakan_benar",
+   "participant": "S01"
+  },
+  "GB_S01_R05.mp4": {
+   "split": "training",
+   "label": "gerakan_benar",
+   "participant": "S01"
+  },
+  "GB_S01_R06.mp4": {
+   "split": "training",
+   "label": "gerakan_benar",
+   "participant": "S01"
+  },
+  "GB_S01_R07.mp4": {
+   "split": "training",
+   "label": "gerakan_benar",
+   "participant": "S01"
+  },
+  "GB_S01_R08.mp4": {
+   "split": "training",
+   "label": "gerakan_benar",
+   "participant": "S01"
+  },
+  "GB_S01_R09.mp4": {
+   "split": "training",
+   "label": "gerakan_benar",
+   "participant": "S01"
+  },
+  "GB_S01_R10.mp4": {
+   "split": "training",
+   "label": "gerakan_benar",
+   "participant": "S01"
+  },
+  "GB_S01_R11.mp4": {
+   "split": "training",
+   "label": "gerakan_benar",
+   "participant": "S01"
+  },
+  "GB_S01_R12.mp4": {
+   "split": "training",
+   "label": "gerakan_benar",
+   "participant": "S01"
+  },
+  "GB_S01_R13.mp4": {
+   "split": "training",
+   "label": "gerakan_benar",
+   "participant": "S01"
+  },
+  "GB_S01_R14.mp4": {
+   "split": "training",
+   "label": "gerakan_benar",
+   "participant": "S01"
+  },
+  "GB_S01_R15.mp4": {
+   "split": "training",
+   "label": "gerakan_benar",
+   "participant": "S01"
+  },
+  "GB_S01_R16.mp4": {
+   "split": "training",
+   "label": "gerakan_benar",
+   "participant": "S01"
+  },
+  "GB_S01_R17.mp4": {
+   "split": "training",
+   "label": "gerakan_benar",
+   "participant": "S01"
+  },
+  "GB_S01_R18.mp4": {
+   "split": "training",
+   "label": "gerakan_benar",
+   "participant": "S01"
+  },
+  "GB_S01_R19.mp4": {
+   "split": "training",
+   "label": "gerakan_benar",
+   "participant": "S01"
+  },
+  "GB_S01_R20.mp4": {
+   "split": "training",
+   "label": "gerakan_benar",
+   "participant": "S01"
+  },
+  "GB_S01_R21.mp4": {
+   "split": "training",
+   "label": "gerakan_benar",
+   "participant": "S01"
+  },
+  "GB_S01_R22.mp4": {
+   "split": "training",
+   "label": "gerakan_benar",
+   "participant": "S01"
+  },
+  "GB_S01_R23.mp4": {
+   "split": "training",
+   "label": "gerakan_benar",
+   "participant": "S01"
+  },
+  "GB_S01_R24.mp4": {
+   "split": "training",
+   "label": "gerakan_benar",
+   "participant": "S01"
+  },
+  "GB_S02_R25.mp4": {
+   "split": "training",
+   "label": "gerakan_benar",
+   "participant": "S02"
+  },
+  "GB_S02_R26.mp4": {
+   "split": "training",
+   "label": "gerakan_benar",
+   "participant": "S02"
+  },
+  "GB_S02_R27.mp4": {
+   "split": "training",
+   "label": "gerakan_benar",
+   "participant": "S02"
+  },
+  "GB_S02_R28.mp4": {
+   "split": "training",
+   "label": "gerakan_benar",
+   "participant": "S02"
+  },
+  "GB_S02_R29.mp4": {
+   "split": "training",
+   "label": "gerakan_benar",
+   "participant": "S02"
+  },
+  "GB_S02_R30.mp4": {
+   "split": "training",
+   "label": "gerakan_benar",
+   "participant": "S02"
+  },
+  "GB_S02_R31.mp4": {
+   "split": "training",
+   "label": "gerakan_benar",
+   "participant": "S02"
+  },
+  "GB_S02_R32.mp4": {
+   "split": "training",
+   "label": "gerakan_benar",
+   "participant": "S02"
+  },
+  "GB_S02_R33.mp4": {
+   "split": "training",
+   "label": "gerakan_benar",
+   "participant": "S02"
+  },
+  "GB_S02_R34.mp4": {
+   "split": "training",
+   "label": "gerakan_benar",
+   "participant": "S02"
+  },
+  "GB_S02_R35.mp4": {
+   "split": "training",
+   "label": "gerakan_benar",
+   "participant": "S02"
+  },
+  "GB_S03_R36.mp4": {
+   "split": "training",
+   "label": "gerakan_benar",
+   "participant": "S03"
+  },
+  "GB_S03_R37.mp4": {
+   "split": "training",
+   "label": "gerakan_benar",
+   "participant": "S03"
+  },
+  "GB_S03_R38.mp4": {
+   "split": "training",
+   "label": "gerakan_benar",
+   "participant": "S03"
+  },
+  "GB_S03_R39.mp4": {
+   "split": "training",
+   "label": "gerakan_benar",
+   "participant": "S03"
+  },
+  "GB_S03_R40.mp4": {
+   "split": "training",
+   "label": "gerakan_benar",
+   "participant": "S03"
+  },
+  "GB_S03_R41.mp4": {
+   "split": "training",
+   "label": "gerakan_benar",
+   "participant": "S03"
+  },
+  "GB_S03_R42.mp4": {
+   "split": "training",
+   "label": "gerakan_benar",
+   "participant": "S03"
+  },
+  "GB_S03_R43.mp4": {
+   "split": "training",
+   "label": "gerakan_benar",
+   "participant": "S03"
+  },
+  "GB_S04_R01.mp4": {
+   "split": "testing",
+   "label": "gerakan_benar",
+   "participant": "S04"
+  },
+  "GB_S04_R02.mp4": {
+   "split": "testing",
+   "label": "gerakan_benar",
+   "participant": "S04"
+  },
+  "GB_S04_R03.mp4": {
+   "split": "testing",
+   "label": "gerakan_benar",
+   "participant": "S04"
+  },
+  "GB_S04_R04.mp4": {
+   "split": "testing",
+   "label": "gerakan_benar",
+   "participant": "S04"
+  },
+  "GB_S04_R05.mp4": {
+   "split": "testing",
+   "label": "gerakan_benar",
+   "participant": "S04"
+  },
+  "GB_S04_R06.mp4": {
+   "split": "testing",
+   "label": "gerakan_benar",
+   "participant": "S04"
+  },
+  "GB_S04_R07.mp4": {
+   "split": "testing",
+   "label": "gerakan_benar",
+   "participant": "S04"
+  },
+  "GB_S04_R08.mp4": {
+   "split": "testing",
+   "label": "gerakan_benar",
+   "participant": "S04"
+  },
+  "GB_S04_R09.mp4": {
+   "split": "testing",
+   "label": "gerakan_benar",
+   "participant": "S04"
+  },
+  "GB_S04_R10.mp4": {
+   "split": "testing",
+   "label": "gerakan_benar",
+   "participant": "S04"
+  },
+  "GB_S05_R44.mp4": {
+   "split": "training",
+   "label": "gerakan_benar",
+   "participant": "S05"
+  },
+  "GB_S05_R45.mp4": {
+   "split": "training",
+   "label": "gerakan_benar",
+   "participant": "S05"
+  },
+  "GB_S05_R46.mp4": {
+   "split": "training",
+   "label": "gerakan_benar",
+   "participant": "S05"
+  },
+  "GB_S05_R47.mp4": {
+   "split": "training",
+   "label": "gerakan_benar",
+   "participant": "S05"
+  },
+  "GB_S05_R48.mp4": {
+   "split": "training",
+   "label": "gerakan_benar",
+   "participant": "S05"
+  },
+  "GB_S05_R49.mp4": {
+   "split": "training",
+   "label": "gerakan_benar",
+   "participant": "S05"
+  },
+  "GB_S05_R50.mp4": {
+   "split": "training",
+   "label": "gerakan_benar",
+   "participant": "S05"
+  },
+  "GB_S05_R51.mp4": {
+   "split": "training",
+   "label": "gerakan_benar",
+   "participant": "S05"
+  },
+  "GB_S05_R52.mp4": {
+   "split": "training",
+   "label": "gerakan_benar",
+   "participant": "S05"
+  },
+  "GB_S05_R53.mp4": {
+   "split": "training",
+   "label": "gerakan_benar",
+   "participant": "S05"
+  },
+  "GB_S06_R54.mp4": {
+   "split": "training",
+   "label": "gerakan_benar",
+   "participant": "S06"
+  },
+  "GB_S06_R55.mp4": {
+   "split": "training",
+   "label": "gerakan_benar",
+   "participant": "S06"
+  },
+  "GB_S06_R56.mp4": {
+   "split": "training",
+   "label": "gerakan_benar",
+   "participant": "S06"
+  },
+  "GB_S06_R57.mp4": {
+   "split": "training",
+   "label": "gerakan_benar",
+   "participant": "S06"
+  },
+  "GB_S06_R58.mp4": {
+   "split": "training",
+   "label": "gerakan_benar",
+   "participant": "S06"
+  },
+  "GB_S06_R59.mp4": {
+   "split": "training",
+   "label": "gerakan_benar",
+   "participant": "S06"
+  },
+  "GB_S06_R60.mp4": {
+   "split": "training",
+   "label": "gerakan_benar",
+   "participant": "S06"
+  },
+  "GB_S06_R61.mp4": {
+   "split": "training",
+   "label": "gerakan_benar",
+   "participant": "S06"
+  },
+  "GB_S06_R62.mp4": {
+   "split": "training",
+   "label": "gerakan_benar",
+   "participant": "S06"
+  },
+  "GB_S06_R63.mp4": {
+   "split": "training",
+   "label": "gerakan_benar",
+   "participant": "S06"
+  },
+  "GB_S07_R11.mp4": {
+   "split": "testing",
+   "label": "gerakan_benar",
+   "participant": "S07"
+  },
+  "GB_S07_R12.mp4": {
+   "split": "testing",
+   "label": "gerakan_benar",
+   "participant": "S07"
+  },
+  "GB_S07_R13.mp4": {
+   "split": "testing",
+   "label": "gerakan_benar",
+   "participant": "S07"
+  },
+  "GB_S07_R14.mp4": {
+   "split": "testing",
+   "label": "gerakan_benar",
+   "participant": "S07"
+  },
+  "GB_S07_R15.mp4": {
+   "split": "testing",
+   "label": "gerakan_benar",
+   "participant": "S07"
+  },
+  "GB_S07_R16.mp4": {
+   "split": "testing",
+   "label": "gerakan_benar",
+   "participant": "S07"
+  },
+  "GB_S07_R17.mp4": {
+   "split": "testing",
+   "label": "gerakan_benar",
+   "participant": "S07"
+  },
+  "GB_S07_R18.mp4": {
+   "split": "testing",
+   "label": "gerakan_benar",
+   "participant": "S07"
+  },
+  "GB_S07_R19.mp4": {
+   "split": "testing",
+   "label": "gerakan_benar",
+   "participant": "S07"
+  },
+  "GB_S07_R20.mp4": {
+   "split": "testing",
+   "label": "gerakan_benar",
+   "participant": "S07"
+  },
+  "LLK_S01_R01.mp4": {
+   "split": "training",
+   "label": "lutut_lebih_jari_kaki",
+   "participant": "S01"
+  },
+  "LLK_S01_R02.mp4": {
+   "split": "training",
+   "label": "lutut_lebih_jari_kaki",
+   "participant": "S01"
+  },
+  "LLK_S01_R03.mp4": {
+   "split": "training",
+   "label": "lutut_lebih_jari_kaki",
+   "participant": "S01"
+  },
+  "LLK_S01_R04.mp4": {
+   "split": "training",
+   "label": "lutut_lebih_jari_kaki",
+   "participant": "S01"
+  },
+  "LLK_S01_R05.mp4": {
+   "split": "training",
+   "label": "lutut_lebih_jari_kaki",
+   "participant": "S01"
+  },
+  "LLK_S01_R06.mp4": {
+   "split": "training",
+   "label": "lutut_lebih_jari_kaki",
+   "participant": "S01"
+  },
+  "LLK_S01_R07.mp4": {
+   "split": "training",
+   "label": "lutut_lebih_jari_kaki",
+   "participant": "S01"
+  },
+  "LLK_S01_R08.mp4": {
+   "split": "training",
+   "label": "lutut_lebih_jari_kaki",
+   "participant": "S01"
+  },
+  "LLK_S01_R09.mp4": {
+   "split": "training",
+   "label": "lutut_lebih_jari_kaki",
+   "participant": "S01"
+  },
+  "LLK_S01_R10.mp4": {
+   "split": "training",
+   "label": "lutut_lebih_jari_kaki",
+   "participant": "S01"
+  },
+  "LLK_S03_R11.mp4": {
+   "split": "training",
+   "label": "lutut_lebih_jari_kaki",
+   "participant": "S03"
+  },
+  "LLK_S03_R12.mp4": {
+   "split": "training",
+   "label": "lutut_lebih_jari_kaki",
+   "participant": "S03"
+  },
+  "LLK_S03_R13.mp4": {
+   "split": "training",
+   "label": "lutut_lebih_jari_kaki",
+   "participant": "S03"
+  },
+  "LLK_S03_R14.mp4": {
+   "split": "training",
+   "label": "lutut_lebih_jari_kaki",
+   "participant": "S03"
+  },
+  "LLK_S04_R01.mp4": {
+   "split": "testing",
+   "label": "lutut_lebih_jari_kaki",
+   "participant": "S04"
+  },
+  "LLK_S04_R02.mp4": {
+   "split": "testing",
+   "label": "lutut_lebih_jari_kaki",
+   "participant": "S04"
+  },
+  "LLK_S04_R03.mp4": {
+   "split": "testing",
+   "label": "lutut_lebih_jari_kaki",
+   "participant": "S04"
+  },
+  "LLK_S04_R04.mp4": {
+   "split": "testing",
+   "label": "lutut_lebih_jari_kaki",
+   "participant": "S04"
+  },
+  "LLK_S04_R05.mp4": {
+   "split": "testing",
+   "label": "lutut_lebih_jari_kaki",
+   "participant": "S04"
+  },
+  "LLK_S04_R06.mp4": {
+   "split": "testing",
+   "label": "lutut_lebih_jari_kaki",
+   "participant": "S04"
+  },
+  "LLK_S04_R07.mp4": {
+   "split": "testing",
+   "label": "lutut_lebih_jari_kaki",
+   "participant": "S04"
+  },
+  "LLK_S04_R08.mp4": {
+   "split": "testing",
+   "label": "lutut_lebih_jari_kaki",
+   "participant": "S04"
+  },
+  "LLK_S04_R09.mp4": {
+   "split": "testing",
+   "label": "lutut_lebih_jari_kaki",
+   "participant": "S04"
+  },
+  "LLK_S04_R10.mp4": {
+   "split": "testing",
+   "label": "lutut_lebih_jari_kaki",
+   "participant": "S04"
+  },
+  "LLK_S05_R15.mp4": {
+   "split": "training",
+   "label": "lutut_lebih_jari_kaki",
+   "participant": "S05"
+  },
+  "LLK_S05_R16.mp4": {
+   "split": "training",
+   "label": "lutut_lebih_jari_kaki",
+   "participant": "S05"
+  },
+  "LLK_S05_R17.mp4": {
+   "split": "training",
+   "label": "lutut_lebih_jari_kaki",
+   "participant": "S05"
+  },
+  "LLK_S05_R18.mp4": {
+   "split": "training",
+   "label": "lutut_lebih_jari_kaki",
+   "participant": "S05"
+  },
+  "LLK_S05_R19.mp4": {
+   "split": "training",
+   "label": "lutut_lebih_jari_kaki",
+   "participant": "S05"
+  },
+  "LLK_S05_R20.mp4": {
+   "split": "training",
+   "label": "lutut_lebih_jari_kaki",
+   "participant": "S05"
+  },
+  "LLK_S05_R21.mp4": {
+   "split": "training",
+   "label": "lutut_lebih_jari_kaki",
+   "participant": "S05"
+  },
+  "LLK_S05_R22.mp4": {
+   "split": "training",
+   "label": "lutut_lebih_jari_kaki",
+   "participant": "S05"
+  },
+  "LLK_S05_R23.mp4": {
+   "split": "training",
+   "label": "lutut_lebih_jari_kaki",
+   "participant": "S05"
+  },
+  "LLK_S05_R24.mp4": {
+   "split": "training",
+   "label": "lutut_lebih_jari_kaki",
+   "participant": "S05"
+  },
+  "LLK_S06_R25.mp4": {
+   "split": "training",
+   "label": "lutut_lebih_jari_kaki",
+   "participant": "S06"
+  },
+  "LLK_S06_R26.mp4": {
+   "split": "training",
+   "label": "lutut_lebih_jari_kaki",
+   "participant": "S06"
+  },
+  "LLK_S06_R27.mp4": {
+   "split": "training",
+   "label": "lutut_lebih_jari_kaki",
+   "participant": "S06"
+  },
+  "LLK_S06_R28.mp4": {
+   "split": "training",
+   "label": "lutut_lebih_jari_kaki",
+   "participant": "S06"
+  },
+  "LLK_S06_R29.mp4": {
+   "split": "training",
+   "label": "lutut_lebih_jari_kaki",
+   "participant": "S06"
+  },
+  "LLK_S06_R30.mp4": {
+   "split": "training",
+   "label": "lutut_lebih_jari_kaki",
+   "participant": "S06"
+  },
+  "LLK_S06_R31.mp4": {
+   "split": "training",
+   "label": "lutut_lebih_jari_kaki",
+   "participant": "S06"
+  },
+  "LLK_S06_R32.mp4": {
+   "split": "training",
+   "label": "lutut_lebih_jari_kaki",
+   "participant": "S06"
+  },
+  "LLK_S06_R33.mp4": {
+   "split": "training",
+   "label": "lutut_lebih_jari_kaki",
+   "participant": "S06"
+  },
+  "LLK_S06_R34.mp4": {
+   "split": "training",
+   "label": "lutut_lebih_jari_kaki",
+   "participant": "S06"
+  },
+  "LLK_S07_R11.mp4": {
+   "split": "testing",
+   "label": "lutut_lebih_jari_kaki",
+   "participant": "S07"
+  },
+  "LLK_S07_R12.mp4": {
+   "split": "testing",
+   "label": "lutut_lebih_jari_kaki",
+   "participant": "S07"
+  },
+  "LLK_S07_R13.mp4": {
+   "split": "testing",
+   "label": "lutut_lebih_jari_kaki",
+   "participant": "S07"
+  },
+  "LLK_S07_R14.mp4": {
+   "split": "testing",
+   "label": "lutut_lebih_jari_kaki",
+   "participant": "S07"
+  },
+  "LLK_S07_R15.mp4": {
+   "split": "testing",
+   "label": "lutut_lebih_jari_kaki",
+   "participant": "S07"
+  },
+  "LLK_S07_R16.mp4": {
+   "split": "testing",
+   "label": "lutut_lebih_jari_kaki",
+   "participant": "S07"
+  },
+  "LLK_S07_R17.mp4": {
+   "split": "testing",
+   "label": "lutut_lebih_jari_kaki",
+   "participant": "S07"
+  },
+  "LLK_S07_R18.mp4": {
+   "split": "testing",
+   "label": "lutut_lebih_jari_kaki",
+   "participant": "S07"
+  },
+  "LLK_S07_R19.mp4": {
+   "split": "testing",
+   "label": "lutut_lebih_jari_kaki",
+   "participant": "S07"
+  },
+  "LLK_S07_R20.mp4": {
+   "split": "testing",
+   "label": "lutut_lebih_jari_kaki",
+   "participant": "S07"
+  },
+  "PB_S01_R01.mp4": {
+   "split": "training",
+   "label": "punggung_bungkuk",
+   "participant": "S01"
+  },
+  "PB_S01_R02.mp4": {
+   "split": "training",
+   "label": "punggung_bungkuk",
+   "participant": "S01"
+  },
+  "PB_S01_R03.mp4": {
+   "split": "training",
+   "label": "punggung_bungkuk",
+   "participant": "S01"
+  },
+  "PB_S01_R04.mp4": {
+   "split": "training",
+   "label": "punggung_bungkuk",
+   "participant": "S01"
+  },
+  "PB_S01_R05.mp4": {
+   "split": "training",
+   "label": "punggung_bungkuk",
+   "participant": "S01"
+  },
+  "PB_S01_R06.mp4": {
+   "split": "training",
+   "label": "punggung_bungkuk",
+   "participant": "S01"
+  },
+  "PB_S01_R07.mp4": {
+   "split": "training",
+   "label": "punggung_bungkuk",
+   "participant": "S01"
+  },
+  "PB_S01_R08.mp4": {
+   "split": "training",
+   "label": "punggung_bungkuk",
+   "participant": "S01"
+  },
+  "PB_S01_R09.mp4": {
+   "split": "training",
+   "label": "punggung_bungkuk",
+   "participant": "S01"
+  },
+  "PB_S01_R10.mp4": {
+   "split": "training",
+   "label": "punggung_bungkuk",
+   "participant": "S01"
+  },
+  "PB_S03_R11.mp4": {
+   "split": "training",
+   "label": "punggung_bungkuk",
+   "participant": "S03"
+  },
+  "PB_S03_R12.mp4": {
+   "split": "training",
+   "label": "punggung_bungkuk",
+   "participant": "S03"
+  },
+  "PB_S03_R13.mp4": {
+   "split": "training",
+   "label": "punggung_bungkuk",
+   "participant": "S03"
+  },
+  "PB_S03_R14.mp4": {
+   "split": "training",
+   "label": "punggung_bungkuk",
+   "participant": "S03"
+  },
+  "PB_S04_R01.mp4": {
+   "split": "testing",
+   "label": "punggung_bungkuk",
+   "participant": "S04"
+  },
+  "PB_S04_R02.mp4": {
+   "split": "testing",
+   "label": "punggung_bungkuk",
+   "participant": "S04"
+  },
+  "PB_S04_R03.mp4": {
+   "split": "testing",
+   "label": "punggung_bungkuk",
+   "participant": "S04"
+  },
+  "PB_S04_R04.mp4": {
+   "split": "testing",
+   "label": "punggung_bungkuk",
+   "participant": "S04"
+  },
+  "PB_S04_R05.mp4": {
+   "split": "testing",
+   "label": "punggung_bungkuk",
+   "participant": "S04"
+  },
+  "PB_S04_R06.mp4": {
+   "split": "testing",
+   "label": "punggung_bungkuk",
+   "participant": "S04"
+  },
+  "PB_S04_R07.mp4": {
+   "split": "testing",
+   "label": "punggung_bungkuk",
+   "participant": "S04"
+  },
+  "PB_S04_R08.mp4": {
+   "split": "testing",
+   "label": "punggung_bungkuk",
+   "participant": "S04"
+  },
+  "PB_S04_R09.mp4": {
+   "split": "testing",
+   "label": "punggung_bungkuk",
+   "participant": "S04"
+  },
+  "PB_S04_R10.mp4": {
+   "split": "testing",
+   "label": "punggung_bungkuk",
+   "participant": "S04"
+  },
+  "PB_S05_R15.mp4": {
+   "split": "training",
+   "label": "punggung_bungkuk",
+   "participant": "S05"
+  },
+  "PB_S05_R16.mp4": {
+   "split": "training",
+   "label": "punggung_bungkuk",
+   "participant": "S05"
+  },
+  "PB_S05_R17.mp4": {
+   "split": "training",
+   "label": "punggung_bungkuk",
+   "participant": "S05"
+  },
+  "PB_S05_R18.mp4": {
+   "split": "training",
+   "label": "punggung_bungkuk",
+   "participant": "S05"
+  },
+  "PB_S05_R19.mp4": {
+   "split": "training",
+   "label": "punggung_bungkuk",
+   "participant": "S05"
+  },
+  "PB_S05_R20.mp4": {
+   "split": "training",
+   "label": "punggung_bungkuk",
+   "participant": "S05"
+  },
+  "PB_S05_R21.mp4": {
+   "split": "training",
+   "label": "punggung_bungkuk",
+   "participant": "S05"
+  },
+  "PB_S05_R22.mp4": {
+   "split": "training",
+   "label": "punggung_bungkuk",
+   "participant": "S05"
+  },
+  "PB_S05_R23.mp4": {
+   "split": "training",
+   "label": "punggung_bungkuk",
+   "participant": "S05"
+  },
+  "PB_S05_R24.mp4": {
+   "split": "training",
+   "label": "punggung_bungkuk",
+   "participant": "S05"
+  },
+  "PB_S06_R25.mp4": {
+   "split": "training",
+   "label": "punggung_bungkuk",
+   "participant": "S06"
+  },
+  "PB_S06_R26.mp4": {
+   "split": "training",
+   "label": "punggung_bungkuk",
+   "participant": "S06"
+  },
+  "PB_S06_R27.mp4": {
+   "split": "training",
+   "label": "punggung_bungkuk",
+   "participant": "S06"
+  },
+  "PB_S06_R28.mp4": {
+   "split": "training",
+   "label": "punggung_bungkuk",
+   "participant": "S06"
+  },
+  "PB_S06_R29.mp4": {
+   "split": "training",
+   "label": "punggung_bungkuk",
+   "participant": "S06"
+  },
+  "PB_S06_R30.mp4": {
+   "split": "training",
+   "label": "punggung_bungkuk",
+   "participant": "S06"
+  },
+  "PB_S06_R31.mp4": {
+   "split": "training",
+   "label": "punggung_bungkuk",
+   "participant": "S06"
+  },
+  "PB_S06_R32.mp4": {
+   "split": "training",
+   "label": "punggung_bungkuk",
+   "participant": "S06"
+  },
+  "PB_S06_R33.mp4": {
+   "split": "training",
+   "label": "punggung_bungkuk",
+   "participant": "S06"
+  },
+  "PB_S06_R34.mp4": {
+   "split": "training",
+   "label": "punggung_bungkuk",
+   "participant": "S06"
+  },
+  "PB_S07_R11.mp4": {
+   "split": "testing",
+   "label": "punggung_bungkuk",
+   "participant": "S07"
+  },
+  "PB_S07_R12.mp4": {
+   "split": "testing",
+   "label": "punggung_bungkuk",
+   "participant": "S07"
+  },
+  "PB_S07_R13.mp4": {
+   "split": "testing",
+   "label": "punggung_bungkuk",
+   "participant": "S07"
+  },
+  "PB_S07_R14.mp4": {
+   "split": "testing",
+   "label": "punggung_bungkuk",
+   "participant": "S07"
+  },
+  "PB_S07_R15.mp4": {
+   "split": "testing",
+   "label": "punggung_bungkuk",
+   "participant": "S07"
+  },
+  "PB_S07_R16.mp4": {
+   "split": "testing",
+   "label": "punggung_bungkuk",
+   "participant": "S07"
+  },
+  "PB_S07_R17.mp4": {
+   "split": "testing",
+   "label": "punggung_bungkuk",
+   "participant": "S07"
+  },
+  "PB_S07_R18.mp4": {
+   "split": "testing",
+   "label": "punggung_bungkuk",
+   "participant": "S07"
+  },
+  "PB_S07_R19.mp4": {
+   "split": "testing",
+   "label": "punggung_bungkuk",
+   "participant": "S07"
+  },
+  "PB_S07_R20.mp4": {
+   "split": "testing",
+   "label": "punggung_bungkuk",
+   "participant": "S07"
+  }
+ }
+}
