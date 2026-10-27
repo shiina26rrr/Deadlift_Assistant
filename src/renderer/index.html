@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' 'wasm-unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' data: blob: app:; connect-src 'self' data: blob: app:; worker-src 'self' blob:; font-src 'self' data:;"
+    />
+    <title>硬拉辅助检测</title>
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="brand">硬拉辅助检测</div>
+      <nav class="tabs">
+        <button id="tab-report" class="tab" type="button">本组记录</button>
+      </nav>
+      <div class="topbar-right">
+        <span id="status-text" class="status">正在初始化…</span>
+        <button id="btn-help" class="ghost" type="button">使用说明</button>
+        <button id="btn-settings" class="ghost" type="button">设置</button>
+      </div>
+    </header>
+
+    <section id="view-training" class="view">
+      <div class="input-bar">
+        <label class="field">
+          <span>摄像头</span>
+          <select id="camera-select"></select>
+        </label>
+        <button id="btn-refresh-cameras" class="ghost small" type="button">刷新</button>
+        <button id="btn-open-camera" type="button">打开摄像头</button>
+        <button id="btn-close-camera" class="ghost" type="button">关闭摄像头</button>
+        <span class="divider"></span>
+        <button id="btn-import-video" type="button">导入本地视频</button>
+      </div>
+
+      <div class="plan-bar">
+        <label class="field">
+          <span>训练模式</span>
+          <select id="training-mode">
+            <option value="free">自由训练</option>
+            <option value="plan">计划训练</option>
+          </select>
+        </label>
+        <div id="plan-config" class="plan-config hidden">
+          <label class="field"><span>组数</span><input id="plan-sets" type="number" min="1" max="20" step="1" value="3" /></label>
+          <label class="field"><span>每组次数</span><input id="plan-reps" type="number" min="1" max="50" step="1" value="5" /></label>
+        </div>
+        <span id="plan-progress" class="plan-progress">自由训练 ｜ 已完成 0 组</span>
+      </div>
+
+      <div class="main-area">
+        <div class="video-panel">
+          <div id="video-container" class="video-container">
+            <video id="video" playsinline muted></video>
+            <canvas id="overlay-canvas"></canvas>
+            <div id="video-empty" class="empty-state">尚未选择输入。请打开摄像头或导入本地视频。</div>
+            <div id="video-hint" class="hint-band hidden"></div>
+            <div id="video-countdown" class="countdown hidden"></div>
+          </div>
+          <div class="actions">
+            <button id="btn-calibrate" class="ghost" type="button">站立校准</button>
+            <button id="btn-start-set" type="button">开始一组</button>
+            <button id="btn-end-set" class="ghost" type="button">结束一组</button>
+            <span id="calibration-status" class="status"></span>
+          </div>
+        </div>
+
+        <aside class="readout-panel">
+          <div class="metric big">
+            <span class="metric-label">完成次数</span>
+            <span id="rep-count" class="metric-value">0</span>
+            <span id="incomplete-count" class="metric-sub">未完成片段 0</span>
+          </div>
+          <div class="metric">
+            <span class="metric-label">当前阶段</span>
+            <span id="phase-label" class="metric-value small">待准备</span>
+          </div>
+          <div class="metric">
+            <span class="metric-label">可见侧</span>
+            <span id="side-label" class="metric-value small">—</span>
+          </div>
+          <div class="angles">
+            <div class="angle-row"><span>手臂 / 地面</span><b id="angle-arm">—</b></div>
+            <div class="angle-row"><span>肘内角</span><b id="angle-elbow">—</b></div>
+            <div class="angle-row"><span>膝内角</span><b id="angle-knee">—</b></div>
+            <div class="angle-row"><span>躯干倾角</span><b id="angle-trunk">—</b></div>
+          </div>
+          <div class="metric">
+            <span class="metric-label">有效覆盖率</span>
+            <span id="coverage" class="metric-value small">—</span>
+          </div>
+          <div id="data-quality" class="status">数据状态未知</div>
+        </aside>
+      </div>
+
+      <div id="report-section" class="report">
+        <h2>本组记录</h2>
+        <div id="report-empty" class="report-empty">本组尚未生成报告。请开始一组并在结束后查看；历史报告见下方"历史记录"。</div>
+        <div id="report-content" class="hidden">
+          <p id="report-summary" class="report-summary"></p>
+          <h3>主要建议</h3>
+          <ul id="report-suggestions" class="suggestions"></ul>
+          <details class="evidence">
+            <summary>逐次与规则依据</summary>
+            <div id="report-evidence"></div>
+          </details>
+          <div class="online-block">
+            <div class="online-head">
+              <span>在线润色</span>
+              <span id="online-status" class="status"></span>
+            </div>
+            <p id="polished-text" class="polished hidden"></p>
+          </div>
+          <div class="voice-actions">
+            <button id="btn-speak" class="ghost" type="button">语音重播总结</button>
+            <button id="btn-stop-speak" class="ghost" type="button">停止语音</button>
+          </div>
+        </div>
+        <div class="save-block">
+          <span id="save-status" class="status"></span>
+          <button id="btn-retry-save" class="ghost small hidden" type="button">重试保存</button>
+        </div>
+        <div id="history-block" class="history-block">
+          <details id="history-details">
+            <summary>历史记录</summary>
+            <div id="history-list"></div>
+          </details>
+        </div>
+      </div>
+    </section>
+    <aside id="settings-panel" class="side-panel hidden">
+      <div class="side-head">
+        <h2>设置</h2>
+        <button id="btn-close-settings" class="ghost small" type="button">关闭</button>
+      </div>
+
+      <h3>在线文本反馈</h3>
+      <label class="check"><input id="set-online-enabled" type="checkbox" /> 启用在线润色（默认关闭）</label>
+      <label class="field"><span>Base URL</span><input id="set-base-url" type="text" placeholder="https://example.com/v1" /></label>
+      <label class="field"><span>模型名称</span><input id="set-model" type="text" placeholder="模型名" /></label>
+      <label class="field"><span>API Key</span><input id="set-api-key" type="password" placeholder="仅当前会话使用" /></label>
+
+      <h3>语音</h3>
+      <label class="check"><input id="set-voice" type="checkbox" /> 组后中文语音播报</label>
+      <div id="voice-availability" class="status"></div>
+
+      <h3>可见侧</h3>
+      <label class="field">
+        <span>选择</span>
+        <select id="set-side">
+          <option value="auto">自动</option>
+          <option value="left">左侧</option>
+          <option value="right">右侧</option>
+        </select>
+      </label>
+
+      <h3>高级参数</h3>
+      <label class="field"><span>倒计时(秒 5–7)</span><input id="set-countdown" type="number" step="1" min="5" max="7" /></label>
+      <label class="field"><span>关键点置信阈值</span><input id="set-confidence" type="number" step="0.05" min="0.1" max="0.9" /></label>
+      <label class="field"><span>弯肘阈值(°)</span><input id="set-elbow" type="number" step="5" min="90" max="180" /></label>
+      <label class="field"><span>手臂偏离阈值(°)</span><input id="set-arm" type="number" step="5" min="5" max="45" /></label>
+      <label class="field"><span>准备稳定(ms)</span><input id="set-ready" type="number" step="100" min="100" max="2000" /></label>
+      <label class="field"><span>站直稳定(ms)</span><input id="set-stand" type="number" step="100" min="100" max="2000" /></label>
+
+      <div class="side-actions">
+        <button id="btn-save-settings" type="button">保存</button>
+        <button id="btn-reset-defaults" class="ghost" type="button">恢复默认</button>
+      </div>
+    </aside>
+
+    <aside id="help-panel" class="side-panel hidden">
+      <div class="side-head">
+        <h2>使用说明</h2>
+        <button id="btn-close-help" class="ghost small" type="button">关闭</button>
+      </div>
+      <ol class="help-list">
+        <li>机位：摄像头放在训练者侧面约 2–3 米，镜头约腰部高度并保持水平，尽量呈矢状侧面。</li>
+        <li>入镜：肩、肘、腕、髋、膝、踝尽量完整入镜，照明清晰。</li>
+        <li>入框：摄像头模式需先让人体（至少头部至脚踝）完整进入引导框，框上方会提示具体调整方向。</li>
+        <li>校准：点击“站立校准”，站直保持约 2–3 秒；摄像头模式下稳定站立并完整入框后会自动校准，随后倒计时 6 秒（可设 5–7 秒）开始本组。</li>
+        <li>模式：开始前选择“自由训练”或“计划训练”；计划模式设置组数与每组次数，达标仅提示、由你手动结束一组。</li>
+        <li>训练：点击“开始一组”，完成动作后点击“结束一组”查看整组报告，并自动保存到本地记录。</li>
+        <li>视频：可导入本地视频；视频正常播放结束会生成报告。</li>
+        <li>历史：同页“历史记录”按日期回看，查看历史不会重置当前训练。</li>
+        <li>语音：在设置中开启组后中文语音播报，可停止与重播。</li>
+        <li>在线反馈：默认关闭；配置并启用后，每组结束至多润色一次汇总。</li>
+        <li>离线：模型与样本随包提供，断网关闭再启动仍可使用。</li>
+      </ol>
+    </aside>
+
+    <footer class="disclaimer">
+      本工具仅作为初学者练习辅助参考，存在算法误差，不能够替代专业健身教练，请勿直接依据该软件判断大重量训练安全性。
+    </footer>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

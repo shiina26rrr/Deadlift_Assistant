@@ -1,0 +1,175 @@
+{
+ "modelPath": "resources/models/action-model.json",
+ "cases": [
+  {
+   "id": "real-gerakan_benar-GB_S01_R01.mp4",
+   "features": [
+    84.43595420781676,
+    79.05013745965752,
+    89.79997838859822,
+    3.397890259460096,
+    163.9301834648204,
+    160.5188734404866,
+    169.09924945963115,
+    2.2579261349433337,
+    164.585832846811,
+    137.9628335814715,
+    173.56298080062842,
+    9.621154452912009,
+    17.14954503103193,
+    0.3497602977966336,
+    45.01219382179948,
+    14.409014033415001,
+    0.1227269260810637,
+    0.02189809746250534,
+    0.8,
+    1.0
+   ],
+   "expected": {
+    "available": true,
+    "modelVersion": "dl-action-v3",
+    "rejected": false,
+    "predictedClass": "GB",
+    "probabilities": {
+     "GB": 0.9088622721336468,
+     "PB": 0.005252632161381805,
+     "LLK": 0.08588509570497148
+    }
+   }
+  },
+  {
+   "id": "real-lutut_lebih_jari_kaki-LLK_S01_R01.mp4",
+   "features": [
+    86.50027125932976,
+    82.90250825889107,
+    89.98012542711393,
+    1.833885640026707,
+    164.90725062587924,
+    158.7593097797258,
+    174.78437631110455,
+    4.070782811128023,
+    152.9681216542672,
+    126.27918991806328,
+    169.66197347983288,
+    16.667316616749478,
+    23.32901380182176,
+    1.623736584661152,
+    57.47215992603543,
+    19.05056603608481,
+    0.2572036230510933,
+    0.052348948128742294,
+    1.064,
+    1.0
+   ],
+   "expected": {
+    "available": true,
+    "modelVersion": "dl-action-v3",
+    "rejected": true,
+    "reason": "LOW_CONFIDENCE",
+    "probabilities": {
+     "GB": 0.5997481914845165,
+     "PB": 0.007971970274685396,
+     "LLK": 0.3922798382407981
+    }
+   }
+  },
+  {
+   "id": "real-punggung_bungkuk-PB_S01_R01.mp4",
+   "features": [
+    84.43019055430545,
+    77.95302323383434,
+    89.69793092550891,
+    3.4722490152340306,
+    170.48281792032148,
+    166.0521559640425,
+    176.0055909646823,
+    3.1743524552460864,
+    156.03489127425289,
+    122.04931388860707,
+    172.28301122680037,
+    19.10038350815752,
+    24.994945334626895,
+    1.7495771861427496,
+    66.19862330419085,
+    19.774449524628228,
+    0.2419862984033487,
+    0.032071184536987866,
+    1.225,
+    1.0
+   ],
+   "expected": {
+    "available": true,
+    "modelVersion": "dl-action-v3",
+    "rejected": true,
+    "reason": "LOW_CONFIDENCE",
+    "probabilities": {
+     "GB": 0.4806621694649896,
+     "PB": 0.4819144530535691,
+     "LLK": 0.03742337748144135
+    }
+   }
+  },
+  {
+   "id": "synthetic-half-missing",
+   "features": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "expected": {
+    "available": true,
+    "modelVersion": "dl-action-v3",
+    "rejected": true,
+    "reason": "FEATURE_MISSING"
+   }
+  },
+  {
+   "id": "synthetic-all-nan",
+   "features": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   "expected": {
+    "available": true,
+    "modelVersion": "dl-action-v3",
+    "rejected": true,
+    "reason": "FEATURE_MISSING"
+   }
+  }
+ ]
+}
