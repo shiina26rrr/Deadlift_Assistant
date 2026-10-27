@@ -1,0 +1,192 @@
+{
+  "description": "演示样本清单。仅收录 CC BY 4.0 授权的 MyDeadlift 传统硬拉侧面视频；每段为一次动作。bundled=true 的样本随发行包提供，其余可在程序内下载补充。",
+  "source": "MyDeadlift Dataset (Mendeley Data, DOI 10.17632/w5prmmxyt9.1, CC BY 4.0)",
+  "license": "CC BY 4.0 (Creative Commons Attribution 4.0 International)",
+  "datasetUrl": "https://data.mendeley.com/datasets/w5prmmxyt9/1",
+  "samples": [
+    {
+      "file": "GB_S01_R01.mp4",
+      "originalFile": "GB_S01_R01.mp4",
+      "source": "MyDeadlift Dataset (Mendeley Data, DOI 10.17632/w5prmmxyt9.1, CC BY 4.0)",
+      "author": "MyDeadlift Dataset contributors",
+      "license": "CC BY 4.0 (Creative Commons Attribution 4.0 International)",
+      "modified": false,
+      "actualReps": 1,
+      "mainPhases": [
+        "起拉",
+        "站直",
+        "下放"
+      ],
+      "usage": "内置演示：单人单次标准起拉-站直-下放",
+      "usedForTuning": false,
+      "concatenated": false,
+      "person": "S01",
+      "bundled": true,
+      "size": 804132,
+      "sha256": "00ac077b0468064837f37d627867d975c4d89923da1879a9c23d61449eb807db",
+      "downloadUrl": "https://data.mendeley.com/public-files/datasets/w5prmmxyt9/files/8cd7b69a-a1cf-4299-98a6-77edb3c7d9fc/file_downloaded",
+      "contentType": "video/mp4"
+    },
+    {
+      "file": "GB_S02_R25.mp4",
+      "originalFile": "GB_S02_R25.mp4",
+      "source": "MyDeadlift Dataset (Mendeley Data, DOI 10.17632/w5prmmxyt9.1, CC BY 4.0)",
+      "author": "MyDeadlift Dataset contributors",
+      "license": "CC BY 4.0 (Creative Commons Attribution 4.0 International)",
+      "modified": false,
+      "actualReps": 1,
+      "mainPhases": [
+        "起拉",
+        "站直",
+        "下放"
+      ],
+      "usage": "内置演示：不同身高体型站直判定",
+      "usedForTuning": false,
+      "concatenated": false,
+      "person": "S02",
+      "bundled": true,
+      "size": 541338,
+      "sha256": "fe52dc59ddf08bbc047747f33275d84d6866f6d77a9651cbc4f8ffbcb79878a9",
+      "downloadUrl": "https://data.mendeley.com/public-files/datasets/w5prmmxyt9/files/77974d3d-acf0-4ae7-b16c-10d791d13277/file_downloaded",
+      "contentType": "video/mp4"
+    },
+    {
+      "file": "GB_S03_R36.mp4",
+      "originalFile": "GB_S03_R36.mp4",
+      "source": "MyDeadlift Dataset (Mendeley Data, DOI 10.17632/w5prmmxyt9.1, CC BY 4.0)",
+      "author": "MyDeadlift Dataset contributors",
+      "license": "CC BY 4.0 (Creative Commons Attribution 4.0 International)",
+      "modified": false,
+      "actualReps": 1,
+      "mainPhases": [
+        "起拉",
+        "站直",
+        "下放"
+      ],
+      "usage": "内置演示：起拉阶段时长观察",
+      "usedForTuning": false,
+      "concatenated": false,
+      "person": "S03",
+      "bundled": true,
+      "size": 571210,
+      "sha256": "3f06bfef1ff29520247c2b82bdd659912f1e3740cdd872c7968e4afe7d6ff0aa",
+      "downloadUrl": "https://data.mendeley.com/public-files/datasets/w5prmmxyt9/files/f32a2b1a-bdd5-4c90-a691-316127af915f/file_downloaded",
+      "contentType": "video/mp4"
+    },
+    {
+      "file": "GB_S04_R01.mp4",
+      "originalFile": "GB_S04_R01.mp4",
+      "source": "MyDeadlift Dataset (Mendeley Data, DOI 10.17632/w5prmmxyt9.1, CC BY 4.0)",
+      "author": "MyDeadlift Dataset contributors",
+      "license": "CC BY 4.0 (Creative Commons Attribution 4.0 International)",
+      "modified": false,
+      "actualReps": 1,
+      "mainPhases": [
+        "起拉",
+        "站直",
+        "下放"
+      ],
+      "usage": "内置演示：下放阶段与节奏",
+      "usedForTuning": false,
+      "concatenated": false,
+      "person": "S04",
+      "bundled": true,
+      "size": 558713,
+      "sha256": "a45c7186f109df4b79c35d051a9094fd0fd44237879a98b5f8681ab3d9732f8b",
+      "downloadUrl": "https://data.mendeley.com/public-files/datasets/w5prmmxyt9/files/a340ce6a-fb16-49e1-9057-dcbf51d996ef/file_downloaded",
+      "contentType": "video/mp4"
+    },
+    {
+      "file": "GB_S05_R44.mp4",
+      "originalFile": "GB_S05_R44.mp4",
+      "source": "MyDeadlift Dataset (Mendeley Data, DOI 10.17632/w5prmmxyt9.1, CC BY 4.0)",
+      "author": "MyDeadlift Dataset contributors",
+      "license": "CC BY 4.0 (Creative Commons Attribution 4.0 International)",
+      "modified": false,
+      "actualReps": 1,
+      "mainPhases": [
+        "起拉",
+        "站直",
+        "下放"
+      ],
+      "usage": "内置演示：躯干倾角变化范围",
+      "usedForTuning": false,
+      "concatenated": false,
+      "person": "S05",
+      "bundled": true,
+      "size": 547554,
+      "sha256": "7da951a09535756dd752a1daa888373db250111215d26a4e765c55ed66afc750",
+      "downloadUrl": "https://data.mendeley.com/public-files/datasets/w5prmmxyt9/files/a528502c-e3fe-453f-b9f7-5682924b5c82/file_downloaded",
+      "contentType": "video/mp4"
+    },
+    {
+      "file": "GB_S06_R54.mp4",
+      "originalFile": "GB_S06_R54.mp4",
+      "source": "MyDeadlift Dataset (Mendeley Data, DOI 10.17632/w5prmmxyt9.1, CC BY 4.0)",
+      "author": "MyDeadlift Dataset contributors",
+      "license": "CC BY 4.0 (Creative Commons Attribution 4.0 International)",
+      "modified": false,
+      "actualReps": 1,
+      "mainPhases": [
+        "起拉",
+        "站直",
+        "下放"
+      ],
+      "usage": "下载补充：测试子集参与者",
+      "usedForTuning": false,
+      "concatenated": false,
+      "person": "S06",
+      "bundled": false,
+      "size": 612987,
+      "sha256": "c28d7db2f05512c6c92033ae480ba0622b61d3f325707aa083aaf8ad95ca1230",
+      "downloadUrl": "https://data.mendeley.com/public-files/datasets/w5prmmxyt9/files/6b4593b9-6622-4fd5-8441-16738370bb16/file_downloaded",
+      "contentType": "video/mp4"
+    },
+    {
+      "file": "GB_S07_R11.mp4",
+      "originalFile": "GB_S07_R11.mp4",
+      "source": "MyDeadlift Dataset (Mendeley Data, DOI 10.17632/w5prmmxyt9.1, CC BY 4.0)",
+      "author": "MyDeadlift Dataset contributors",
+      "license": "CC BY 4.0 (Creative Commons Attribution 4.0 International)",
+      "modified": false,
+      "actualReps": 1,
+      "mainPhases": [
+        "起拉",
+        "站直",
+        "下放"
+      ],
+      "usage": "下载补充：测试子集参与者",
+      "usedForTuning": false,
+      "concatenated": false,
+      "person": "S07",
+      "bundled": false,
+      "size": 735225,
+      "sha256": "2ccf15ef900487b602ddce320f9dbbaf0736fe081136f79244495e83e151b969",
+      "downloadUrl": "https://data.mendeley.com/public-files/datasets/w5prmmxyt9/files/db615e02-5ace-4f15-a636-3b70320ed325/file_downloaded",
+      "contentType": "video/mp4"
+    },
+    {
+      "file": "GB_S03_R37.mp4",
+      "originalFile": "GB_S03_R37.mp4",
+      "source": "MyDeadlift Dataset (Mendeley Data, DOI 10.17632/w5prmmxyt9.1, CC BY 4.0)",
+      "author": "MyDeadlift Dataset contributors",
+      "license": "CC BY 4.0 (Creative Commons Attribution 4.0 International)",
+      "modified": false,
+      "actualReps": 1,
+      "mainPhases": [
+        "起拉",
+        "站直",
+        "下放"
+      ],
+      "usage": "下载补充：同参与者另一段",
+      "usedForTuning": false,
+      "concatenated": false,
+      "person": "S03",
+      "bundled": false,
+      "size": 613389,
+      "sha256": "ee280eb86030bb1a80074665986f77b3102a70bc21f4ff72557435e236fdb22e",
+      "downloadUrl": "https://data.mendeley.com/public-files/datasets/w5prmmxyt9/files/d6a3842e-39ac-4602-a015-bcc1c19055fb/file_downloaded",
+      "contentType": "video/mp4"
+    }
+  ]
+}
